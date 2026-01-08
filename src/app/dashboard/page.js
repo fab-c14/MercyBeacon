@@ -12,7 +12,7 @@ import {
   getDonationStats, 
   getRecentDonations, 
   getMessages 
-} from '@/services/firebaseService';
+} from '../../services/firebaseService';
 
 const DashboardPage = () => {
   const [stats, setStats] = useState({

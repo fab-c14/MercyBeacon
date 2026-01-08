@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
-import { addContact } from '@/services/firebaseService';
+import { addContact } from '../services/firebaseService';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { FaHeart, FaCheckCircle } from 'react-icons/fa';
-import { addDonation } from '@/services/firebaseService';
+import { addDonation } from '../services/firebaseService';
 
 const DonationSection = () => {
   const [selectedAmount, setSelectedAmount] = useState(null);

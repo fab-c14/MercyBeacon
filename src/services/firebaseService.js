@@ -9,7 +9,7 @@ import {
   serverTimestamp,
   where 
 } from 'firebase/firestore';
-import { db } from '@/lib/firebase';
+import { db } from '../lib/firebase';
 
 // Collections
 const COLLECTIONS = {
