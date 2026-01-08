@@ -135,10 +135,12 @@ Edit the `.env.local` file to customize:
 ### Styling
 
 The project uses Tailwind CSS. Main color scheme:
-- Primary: Purple (#A855F7)
-- Secondary: Pink (#EC4899)
-- Accent: Sky (#0EA5E9)
-- Background: Neutral grays
+- Primary: Orange (#F97316)
+- Secondary Accents: Teal (#14B8A6), Blue (#3B82F6), Green (#22C55E)
+- Background: White with subtle gray sections
+- Footer: Dark gray (#111827)
+
+Update colors in component files or add custom Tailwind configuration.
 
 ## Development
 

@@ -12,6 +12,15 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
+// Validate required Firebase config
+const requiredConfigKeys = ['apiKey', 'projectId', 'appId'];
+const missingKeys = requiredConfigKeys.filter(key => !firebaseConfig[key]);
+
+if (missingKeys.length > 0) {
+  console.warn('Firebase: Missing required configuration:', missingKeys.join(', '));
+  console.warn('Firebase features will not work until configuration is provided in environment variables.');
+}
+
 // Initialize Firebase only if it hasn't been initialized
 let app;
 if (!getApps().length) {
