@@ -1,7 +1,6 @@
 // Firebase configuration and initialization
 import { initializeApp, getApps } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import { getAnalytics, isSupported } from 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -23,8 +22,5 @@ if (!getApps().length) {
 
 // Initialize Firestore
 export const db = getFirestore(app);
-
-// Initialize Analytics (only on client side)
-export const analytics = typeof window !== 'undefined' ? isSupported().then(yes => yes ? getAnalytics(app) : null) : null;
 
 export default app;

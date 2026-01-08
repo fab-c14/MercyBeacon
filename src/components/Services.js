@@ -1,134 +1,114 @@
 import React from 'react';
-import { GiCircuitry, GiTechnoHeart, GiWireframeGlobe, GiCyberEye } from 'react-icons/gi';
+import { FaUtensils, FaHeartbeat, FaBook, FaHandsHelping } from 'react-icons/fa';
 
-// Configuration object for charity services, text, and styles
 const CONFIG = {
-    title: "OUR IMPACT",
-    subtitle: "AREAS WE SERVE",
+    title: "Our Impact Areas",
+    subtitle: "How We Help Communities",
     services: [
         {
-            icon: <GiCircuitry className="text-4xl mb-4" />,
-            title: "FOOD",
-            subtitle: "RELIEF",
+            icon: <FaUtensils className="text-4xl" />,
+            title: "Food Relief",
             description:
                 "We provide meals to families facing hunger. Every donation helps us deliver hope and nourishment to those in need.",
-            buttonText: "Donate Meals",
-            bgColor: "bg-gray-800",
-            textColor: "text-cyan-400",
-            glowColor: "glow-cyan",
-            rotation: "rotate-1",
-            buttonBorderColor: "border-cyan-400",
-            buttonHoverBgColor: "hover:bg-cyan-500",
-            buttonHoverTextColor: "hover:text-gray-900",
+            buttonText: "Support Food Relief",
+            color: "orange",
         },
         {
-            icon: <GiTechnoHeart className="text-4xl mb-4" />,
-            title: "HEALTH",
-            subtitle: "CARE",
+            icon: <FaHeartbeat className="text-4xl" />,
+            title: "Healthcare",
             description:
-                "We support medical aid programs, ensuring vulnerable communities receive essential treatment and life‑saving care.",
-            buttonText: "Support Health",
-            bgColor: "bg-purple-900",
-            textColor: "text-pink-500",
-            glowColor: "glow-pink",
-            rotation: "-rotate-1",
-            buttonBorderColor: "border-pink-500",
-            buttonHoverBgColor: "hover:bg-pink-500",
-            buttonHoverTextColor: "hover:text-gray-900",
+                "We support medical aid programs, ensuring vulnerable communities receive essential treatment and life-saving care.",
+            buttonText: "Support Healthcare",
+            color: "teal",
         },
         {
-            icon: <GiWireframeGlobe className="text-4xl mb-4" />,
-            title: "EDUCATION",
-            subtitle: "ACCESS",
+            icon: <FaBook className="text-4xl" />,
+            title: "Education",
             description:
                 "We provide books, resources, and scholarships to empower children with knowledge and brighter futures.",
             buttonText: "Fund Education",
-            bgColor: "bg-blue-900",
-            textColor: "text-cyan-300",
-            glowColor: "glow-cyan",
-            rotation: "rotate-1",
-            buttonBorderColor: "border-cyan-400",
-            buttonHoverBgColor: "hover:bg-cyan-500",
-            buttonHoverTextColor: "hover:text-gray-900",
+            color: "blue",
         },
         {
-            icon: <GiCyberEye className="text-4xl mb-4" />,
-            title: "COMMUNITY",
-            subtitle: "SUPPORT",
+            icon: <FaHandsHelping className="text-4xl" />,
+            title: "Community Support",
             description:
                 "We strengthen communities through shelters, counseling, and empowerment programs. Together, we build resilience and hope.",
-            buttonText: "Join Us",
-            bgColor: "bg-gray-800",
-            textColor: "text-purple-400",
-            glowColor: "glow-purple",
-            rotation: "-rotate-1",
-            buttonBorderColor: "border-purple-500",
-            buttonHoverBgColor: "hover:bg-purple-500",
-            buttonHoverTextColor: "hover:text-gray-900",
+            buttonText: "Join Our Mission",
+            color: "green",
         },
     ],
 };
 
+const getColorClasses = (color) => {
+    const colors = {
+        orange: {
+            bg: 'bg-orange-50',
+            icon: 'text-orange-500',
+            button: 'bg-orange-500 hover:bg-orange-600',
+            border: 'border-orange-200',
+        },
+        teal: {
+            bg: 'bg-teal-50',
+            icon: 'text-teal-500',
+            button: 'bg-teal-500 hover:bg-teal-600',
+            border: 'border-teal-200',
+        },
+        blue: {
+            bg: 'bg-blue-50',
+            icon: 'text-blue-500',
+            button: 'bg-blue-500 hover:bg-blue-600',
+            border: 'border-blue-200',
+        },
+        green: {
+            bg: 'bg-green-50',
+            icon: 'text-green-500',
+            button: 'bg-green-500 hover:bg-green-600',
+            border: 'border-green-200',
+        },
+    };
+    return colors[color];
+};
+
 const Services = () => {
     return (
-        <section id="services" className="relative bg-gray-900 overflow-hidden py-20">
-            {/* Background Grid */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(#1e1e31_1px,transparent_1px)] [background-size:40px_40px] opacity-50"></div>
-                <div className="absolute inset-0 transition-opacity duration-300">
-                    <div className="absolute top-0 left-1/4 w-px h-full bg-cyan-500 glow-cyan animate-pulse"></div>
-                    <div className="absolute top-0 right-1/4 w-px h-full bg-pink-500 glow-pink animate-pulse"></div>
-                    <div className="absolute top-1/4 left-0 w-full h-px bg-yellow-500 glow-yellow animate-pulse"></div>
-                    <div className="absolute bottom-1/4 left-0 w-full h-px bg-purple-500 glow-purple animate-pulse"></div>
-                </div>
-            </div>
-
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <h2 className="text-5xl md:text-7xl font-extrabold text-white text-center mb-12 font-cyber">
-                    {CONFIG.title}
-                    <br />
-                    <span className="inline-block transform skew-x-12 text-gray-900 bg-cyan-500 px-4 py-2 transition-transform duration-300 hover:skew-x-0">
+        <section id="services" className="relative bg-gray-50 py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        {CONFIG.title}
+                    </h2>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         {CONFIG.subtitle}
-                    </span>
-                </h2>
+                    </p>
+                </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    {CONFIG.services.map((service, index) => (
-                        <div
-                            key={index}
-                            className={`relative p-8 ${service.bgColor} ${service.textColor} ${service.glowColor} transform ${service.rotation} hover:rotate-0 transition-all duration-300 ease-in-out`}
-                        >
-                            <div className={`absolute inset-0 ${service.bgColor} transform rotate-3 opacity-20`}></div>
-                            <div className="relative z-10">
-                                {service.icon}
-                                <h3 className="text-4xl md:text-5xl font-extrabold text-white leading-none tracking-tighter font-cyber">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {CONFIG.services.map((service, index) => {
+                        const colorClasses = getColorClasses(service.color);
+                        return (
+                            <div
+                                key={index}
+                                className={`${colorClasses.bg} ${colorClasses.border} border-2 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl`}
+                            >
+                                <div className={`${colorClasses.icon} mb-6`}>
+                                    {service.icon}
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                                     {service.title}
-                                    <br />
-                                    <span
-                                        className={`inline-block transform skew-x-12 text-gray-900 px-4 py-2 transition-transform duration-300 hover:skew-x-0 ${service.bgColor.replace(
-                                            'bg-',
-                                            'bg-'
-                                        )}`}
-                                    >
-                                        {service.subtitle}
-                                    </span>
                                 </h3>
-                                <p className="text-gray-400 mt-4">{service.description}</p>
+                                <p className="text-gray-600 mb-6 leading-relaxed">
+                                    {service.description}
+                                </p>
                                 <a
                                     href="#donate"
-                                    className={`mt-8 group relative inline-block ${service.buttonBorderColor} bg-gray-800 px-6 py-3 ${service.textColor} ${service.buttonHoverBgColor} ${service.buttonHoverTextColor} transition-all duration-300 ease-in-out font-bold uppercase text-lg ${service.glowColor} overflow-hidden transform ${service.rotation} hover:rotate-0 hover:scale-105 active:scale-95`}
+                                    className={`inline-block ${colorClasses.button} text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg`}
                                 >
-                                    <div
-                                        className={`absolute inset-0 ${service.bgColor.replace(
-                                            'bg-',
-                                            'bg-'
-                                        )} transform rotate-3 opacity-20 group-hover:opacity-50 transition-opacity duration-300`}
-                                    ></div>
-                                    <span>{service.buttonText}</span>
+                                    {service.buttonText}
                                 </a>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>

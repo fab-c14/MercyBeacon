@@ -15,13 +15,13 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-neutral-900/80 backdrop-blur-md border-b border-neutral-800">
+    <nav className="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <FaHeart className="text-pink-500 text-2xl" />
-            <span className="text-white font-bold text-xl">
+            <FaHeart className="text-orange-500 text-2xl" />
+            <span className="text-gray-900 font-bold text-xl">
               {process.env.NEXT_PUBLIC_CHARITY_NAME || 'CharityWeb'}
             </span>
           </Link>
@@ -32,14 +32,14 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-neutral-300 hover:text-white transition-colors duration-200"
+                className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="#donate"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Donate Now
             </Link>
@@ -48,7 +48,7 @@ const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden text-gray-900 p-2"
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
@@ -56,12 +56,12 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 border-t border-gray-200 mt-2 pt-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-neutral-300 hover:text-white transition-colors"
+                className="block py-2 text-gray-700 hover:text-orange-500 transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -69,7 +69,7 @@ const Navigation = () => {
             ))}
             <Link
               href="#donate"
-              className="block mt-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full font-semibold text-center"
+              className="block mt-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold text-center transition-all duration-300"
               onClick={() => setIsOpen(false)}
             >
               Donate Now

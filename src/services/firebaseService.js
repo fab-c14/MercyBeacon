@@ -136,7 +136,7 @@ export const getDonationStats = async () => {
     
     querySnapshot.forEach((doc) => {
       const data = doc.data();
-      if (data.amount) {
+      if (data.amount && !isNaN(parseFloat(data.amount))) {
         totalAmount += parseFloat(data.amount);
       }
       totalDonations++;
