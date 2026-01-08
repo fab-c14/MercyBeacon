@@ -1,43 +1,42 @@
 import {
-    FaWallet,
-    FaChartLine,
-    FaShieldAlt,
-    FaGraduationCap,
+    FaHandHoldingHeart,
+    FaUsers,
+    FaGlobe,
+    FaHeart,
 } from "react-icons/fa";
 
-// No TypeScript types here, just plain JS objects
 const content = {
-    heading: "What We Do",
+    heading: "About Our Mission",
     subheading:
-        "We offer a comprehensive suite of Bitcoin services designed to make your journey into cryptocurrency smooth, secure, and rewarding.",
+        "We are dedicated to creating lasting positive change in communities worldwide through compassion, generosity, and collaborative action.",
     services: [
         {
-            icon: FaWallet,
-            title: "Secure Wallet Solutions",
+            icon: FaHandHoldingHeart,
+            title: "Direct Impact",
             description:
-                "We provide cutting-edge wallet technology to keep your Bitcoin safe and easily accessible.",
+                "100% of donations go directly to those in need. We operate with full transparency and accountability.",
         },
         {
-            icon: FaChartLine,
-            title: "Trading Platform",
+            icon: FaUsers,
+            title: "Community-Driven",
             description:
-                "Our user-friendly trading platform allows you to buy, sell, and trade Bitcoin with ease.",
+                "Working hand-in-hand with local communities to identify needs and implement sustainable solutions.",
         },
         {
-            icon: FaShieldAlt,
-            title: "Advanced Security",
+            icon: FaGlobe,
+            title: "Global Reach",
             description:
-                "We implement state-of-the-art security measures to protect your assets and personal information.",
+                "Operating in 50+ communities across the world, bringing hope and resources to underserved populations.",
         },
         {
-            icon: FaGraduationCap,
-            title: "Education & Resources",
+            icon: FaHeart,
+            title: "Volunteer Network",
             description:
-                "We offer comprehensive educational materials to help you understand and navigate the world of Bitcoin.",
+                "Powered by 500+ dedicated volunteers who share our vision of a more compassionate world.",
         },
     ],
-    ctaText: "Explore Our Services",
-    ctaLink: "#",
+    ctaText: "Join Our Mission",
+    ctaLink: "#donate",
 };
 
 const theme = {
@@ -49,12 +48,12 @@ const theme = {
     subheadingColor: "text-gray-300",
     cardTitleColor: "text-white",
     cardDescriptionColor: "text-gray-300",
-    iconGradientFrom: "from-yellow-400",
-    iconGradientTo: "to-orange-500",
-    ctaGradientFrom: "from-yellow-400",
-    ctaGradientTo: "to-orange-500",
-    ctaHoverFrom: "hover:from-yellow-500",
-    ctaHoverTo: "hover:to-orange-600",
+    iconGradientFrom: "from-purple-500",
+    iconGradientTo: "to-pink-500",
+    ctaGradientFrom: "from-purple-500",
+    ctaGradientTo: "to-pink-500",
+    ctaHoverFrom: "hover:from-purple-600",
+    ctaHoverTo: "hover:to-pink-600",
 };
 
 const Heading = () => (
@@ -72,7 +71,7 @@ const Heading = () => (
 
 const ServiceCard = ({ service }) => (
     <div
-        className={`${theme.cardBg} flex items-start space-x-4 rounded-xl p-6 shadow-md transition-shadow duration-300 hover:shadow-lg`}
+        className={`${theme.cardBg} flex items-start space-x-4 rounded-xl p-6 shadow-md transition-shadow duration-300 hover:shadow-lg border border-neutral-700`}
     >
         <div className="flex-shrink-0">
             <div
@@ -94,14 +93,14 @@ const CTAButton = () => (
     <div className="mt-16 text-center">
         <a
             href={content.ctaLink}
-            className={`inline-block bg-gradient-to-r ${theme.ctaGradientFrom} ${theme.ctaGradientTo} rounded-full px-8 py-3 font-bold text-white ${theme.ctaHoverFrom} ${theme.ctaHoverTo} transition-colors duration-300`}
+            className={`inline-block bg-gradient-to-r ${theme.ctaGradientFrom} ${theme.ctaGradientTo} rounded-full px-8 py-3 font-bold text-white ${theme.ctaHoverFrom} ${theme.ctaHoverTo} transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-pink-500/50`}
         >
             {content.ctaText}
         </a>
     </div>
 );
 
-const WhatWeDo = () => (
+const AboutPage = () => (
     <div
         className={`min-h-screen ${theme.gradientDirection} ${theme.bgGradientFrom} ${theme.bgGradientTo} px-4 py-20 sm:px-6 lg:px-8`}
     >
@@ -113,8 +112,21 @@ const WhatWeDo = () => (
                 ))}
             </div>
             <CTAButton />
+            
+            {/* Mission Statement */}
+            <div className="mt-20 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-8 md:p-12">
+                <h3 className="text-white text-2xl md:text-3xl font-bold mb-6 text-center">
+                    Our Story
+                </h3>
+                <p className="text-neutral-300 text-lg leading-relaxed max-w-4xl mx-auto text-center">
+                    Founded on the belief that every person deserves dignity, opportunity, and hope, 
+                    CharityWeb brings together compassionate individuals from around the world. 
+                    Through food relief, healthcare support, education programs, and community development, 
+                    we're building a brighter future—one act of kindness at a time.
+                </p>
+            </div>
         </div>
     </div>
 );
 
-export default WhatWeDo;
+export default AboutPage;

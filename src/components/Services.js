@@ -3,8 +3,8 @@ import { GiCircuitry, GiTechnoHeart, GiWireframeGlobe, GiCyberEye } from 'react-
 
 // Configuration object for charity services, text, and styles
 const CONFIG = {
-    title: "SERVICES",
-    subtitle: "OUR IMPACT",
+    title: "OUR IMPACT",
+    subtitle: "AREAS WE SERVE",
     services: [
         {
             icon: <GiCircuitry className="text-4xl mb-4" />,
@@ -71,7 +71,7 @@ const CONFIG = {
 
 const Services = () => {
     return (
-        <div className="relative bg-gray-900 overflow-hidden py-16">
+        <section id="services" className="relative bg-gray-900 overflow-hidden py-20">
             {/* Background Grid */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-[radial-gradient(#1e1e31_1px,transparent_1px)] [background-size:40px_40px] opacity-50"></div>
@@ -114,8 +114,9 @@ const Services = () => {
                                     </span>
                                 </h3>
                                 <p className="text-gray-400 mt-4">{service.description}</p>
-                                <button
-                                    className={`mt-8 group relative ${service.buttonBorderColor} bg-gray-800 px-6 py-3 ${service.textColor} ${service.buttonHoverBgColor} ${service.buttonHoverTextColor} transition-all duration-300 ease-in-out font-bold uppercase text-lg ${service.glowColor} overflow-hidden transform ${service.rotation} hover:rotate-0 hover:scale-105 active:scale-95`}
+                                <a
+                                    href="#donate"
+                                    className={`mt-8 group relative inline-block ${service.buttonBorderColor} bg-gray-800 px-6 py-3 ${service.textColor} ${service.buttonHoverBgColor} ${service.buttonHoverTextColor} transition-all duration-300 ease-in-out font-bold uppercase text-lg ${service.glowColor} overflow-hidden transform ${service.rotation} hover:rotate-0 hover:scale-105 active:scale-95`}
                                 >
                                     <div
                                         className={`absolute inset-0 ${service.bgColor.replace(
@@ -124,13 +125,13 @@ const Services = () => {
                                         )} transform rotate-3 opacity-20 group-hover:opacity-50 transition-opacity duration-300`}
                                     ></div>
                                     <span>{service.buttonText}</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
