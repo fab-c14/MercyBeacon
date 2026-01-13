@@ -1,0 +1,17 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install -g firebase-tools
+      - run: npm ci && npm run build
+      - name: Deploy to Firebase
+        run: firebase deploy --only hosting --project bileads
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
