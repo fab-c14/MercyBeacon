@@ -15,35 +15,48 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="inline-block mb-4">
               <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
-                🌟 Making Impact Together
+                🌟 MercyBeacon Foundation International
               </span>
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900">
-              Empower Lives Through
+              Lighting lives through
               <span className="block text-orange-500 mt-2">
-                Compassion
+                healthcare, education, and dignity
               </span>
             </h1>
 
             <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-2xl">
-              Join us in our mission to create positive change in communities worldwide. 
-              Every contribution brings hope, dignity, and opportunity to those who need it most.
+              Built on a legacy of service since 1988, MercyBeacon protects education continuity, unlocks medical support, and restores dignity for vulnerable households.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center lg:justify-start max-w-xl">
               <a
                 href="#donate"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-500 hover:bg-orange-600 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Start Donating
+                Donate
               </a>
               
               <a
-                href="#volunteer"
+                href="#programs"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-50 transition-all duration-300"
               >
-                Volunteer With Us
+                Sponsor Education
+              </a>
+              
+              <a
+                href="#support"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gray-900 hover:bg-black rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Request Medical Support
+              </a>
+
+              <a
+                href="#get-involved"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-50 transition-all duration-300"
+              >
+                Partner With Us
               </a>
             </div>
 
@@ -51,21 +64,21 @@ const HeroSection = () => {
             <div className="grid grid-cols-3 gap-6 mt-12 max-w-lg mx-auto lg:mx-0">
               <div>
                 <div className="text-3xl font-bold text-orange-500">
-                  10K+
+                  5K+
                 </div>
-                <div className="text-gray-600 text-sm">Lives Touched</div>
+                <div className="text-gray-600 text-sm">Students supported</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-orange-500">
-                  500+
+                  8K+
                 </div>
-                <div className="text-gray-600 text-sm">Volunteers</div>
+                <div className="text-gray-600 text-sm">Families reached</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-orange-500">
-                  50+
+                  1.2K+
                 </div>
-                <div className="text-gray-600 text-sm">Communities</div>
+                <div className="text-gray-600 text-sm">Medical cases supported</div>
               </div>
             </div>
           </div>

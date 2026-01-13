@@ -2,40 +2,44 @@ import React from 'react';
 import { FaUtensils, FaHeartbeat, FaBook, FaHandsHelping } from 'react-icons/fa';
 
 const CONFIG = {
-    title: "Our Impact Areas",
-    subtitle: "How We Help Communities",
+    title: "Focus Areas",
+    subtitle: "MercyBeacon Foundation International prioritizes education continuity, healthcare access, dignity for families, and community protection.",
     services: [
         {
-            icon: <FaUtensils className="text-4xl" />,
-            title: "Food Relief",
+            icon: <FaBook className="text-4xl" />,
+            title: "Education Support",
             description:
-                "We provide meals to families facing hunger. Every donation helps us deliver hope and nourishment to those in need.",
-            buttonText: "Support Food Relief",
-            color: "orange",
+                "Keep students enrolled through fee support, learning continuity, and back-to-school essentials so poverty never blocks a child’s education.",
+            buttonText: "Sponsor Education",
+            color: "blue",
+            href: "#programs",
         },
         {
             icon: <FaHeartbeat className="text-4xl" />,
-            title: "Healthcare",
+            title: "Healthcare & Relief",
             description:
-                "We support medical aid programs, ensuring vulnerable communities receive essential treatment and life-saving care.",
-            buttonText: "Support Healthcare",
+                "Help families cover medicines, diagnostics, and urgent medical needs while providing food and essential kits during hardship.",
+            buttonText: "Request Medical Support",
             color: "teal",
-        },
-        {
-            icon: <FaBook className="text-4xl" />,
-            title: "Education",
-            description:
-                "We provide books, resources, and scholarships to empower children with knowledge and brighter futures.",
-            buttonText: "Fund Education",
-            color: "blue",
+            href: "#support",
         },
         {
             icon: <FaHandsHelping className="text-4xl" />,
-            title: "Community Support",
+            title: "Women & Family Support",
             description:
-                "We strengthen communities through shelters, counseling, and empowerment programs. Together, we build resilience and hope.",
-            buttonText: "Join Our Mission",
+                "Protect dignity for vulnerable households through need-based assistance, girls’ education continuity, and dignified family support.",
+            buttonText: "Support Families",
+            color: "orange",
+            href: "#get-involved",
+        },
+        {
+            icon: <FaUtensils className="text-4xl" />,
+            title: "Community Protection",
+            description:
+                "Advance prevention campaigns and public health advocacy, including awareness on food safety and social harm prevention.",
+            buttonText: "Join Community Protection",
             color: "green",
+            href: "#community-protection",
         },
     ],
 };
@@ -72,7 +76,7 @@ const getColorClasses = (color) => {
 
 const Services = () => {
     return (
-        <section id="services" className="relative bg-gray-50 py-20">
+        <section id="focus-areas" className="relative bg-gray-50 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -101,7 +105,7 @@ const Services = () => {
                                     {service.description}
                                 </p>
                                 <a
-                                    href="#donate"
+                                    href={service.href}
                                     className={`inline-block ${colorClasses.button} text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg`}
                                 >
                                     {service.buttonText}
