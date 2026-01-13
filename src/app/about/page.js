@@ -6,41 +6,41 @@ import {
 } from "react-icons/fa";
 
 const content = {
-    heading: "About Our Mission",
+    heading: "Who We Are",
     subheading:
-        "We are dedicated to creating lasting positive change in communities worldwide through compassion, generosity, and collaborative action.",
+        "MercyBeacon Foundation International is a social impact foundation protecting health, enabling education, and restoring dignity for vulnerable households. Our work is rooted in service carried out under Shams-ul-Huda Educational & Research Trust since 1988.",
     services: [
         {
             icon: FaHandHoldingHeart,
-            title: "Direct Impact",
+            title: "Healthcare & Relief",
             description:
-                "100% of donations go directly to those in need. We operate with full transparency and accountability.",
+                "Medical support, medicines, diagnostics, and relief kits deployed with household-level due diligence.",
             color: "orange",
         },
         {
             icon: FaUsers,
-            title: "Community-Driven",
+            title: "Education Continuity",
             description:
-                "Working hand-in-hand with local communities to identify needs and implement sustainable solutions.",
+                "Fees, tuition continuity, higher education assistance, and back-to-school essentials to keep students enrolled.",
             color: "teal",
         },
         {
             icon: FaGlobe,
-            title: "Global Reach",
+            title: "Dignity-First Family Support",
             description:
-                "Operating in 50+ communities across the world, bringing hope and resources to underserved populations.",
+                "Support for vulnerable households with safeguards, including girls’ education and dignified family assistance.",
             color: "blue",
         },
         {
             icon: FaHeart,
-            title: "Volunteer Network",
+            title: "Community Protection",
             description:
-                "Powered by 500+ dedicated volunteers who share our vision of a more compassionate world.",
+                "Prevention campaigns, food safety advocacy, and community mobilization to reduce social harms.",
             color: "green",
         },
     ],
-    ctaText: "Join Our Mission",
-    ctaLink: "#donate",
+    ctaText: "Explore Programs",
+    ctaLink: "/#programs",
 };
 
 const getColorClasses = (color) => {
@@ -111,16 +111,69 @@ const AboutPage = () => (
             </div>
             <CTAButton />
             
-            {/* Mission Statement */}
-            <div className="mt-20 bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
-                <h3 className="text-gray-900 text-2xl md:text-3xl font-bold mb-6 text-center">
-                    Our Story
+            {/* Mission & Vision */}
+            <div className="mt-20 grid md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+                    <h3 className="text-gray-900 text-2xl font-bold mb-4">Mission</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                        To ensure poverty never blocks a child’s education, a patient’s healthcare, or a family’s dignity—by delivering reliable support systems at the household level.
+                    </p>
+                </div>
+                <div className="bg-orange-50 border-2 border-orange-200 rounded-2xl p-8 shadow-lg">
+                    <h3 className="text-gray-900 text-2xl font-bold mb-4">Vision</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                        A society where communities thrive through education continuity, safer public health conditions, and strong family support, especially for those most at risk.
+                    </p>
+                </div>
+            </div>
+
+            {/* Values */}
+            <div className="mt-12 bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+                <h3 className="text-gray-900 text-2xl font-bold mb-6 text-center">Values</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-800">
+                    {["Mercy with accountability", "Dignity-first support", "Transparency", "Community partnership", "Prevention and protection", "Ethics and safeguarding"].map((value) => (
+                        <div key={value} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+                            {value}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Legacy */}
+            <div className="mt-12 bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 className="text-gray-900 text-2xl md:text-3xl font-bold mb-4">
+                    Our Legacy (1988–Present)
                 </h3>
-                <p className="text-gray-600 text-lg leading-relaxed max-w-4xl mx-auto text-center">
-                    Founded on the belief that every person deserves dignity, opportunity, and hope, 
-                    CharityWeb brings together compassionate individuals from around the world. 
-                    Through food relief, healthcare support, education programs, and community development, 
-                    we're building a brighter future—one act of kindness at a time.
+                <p className="text-gray-700 text-lg leading-relaxed">
+                    Roots trace back to Shams-ul-Huda Educational &amp; Research Trust (1988), serving families with education support, relief, and wellbeing initiatives in Srinagar and beyond. MercyBeacon builds on this credibility with expanded programs and safeguards.
+                </p>
+            </div>
+
+            {/* Leadership */}
+            <div className="mt-12 bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+                <h3 className="text-gray-900 text-2xl font-bold mb-6 text-center">Leadership</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                    {[
+                        {
+                            name: "Mufti Syed Ahmad Bukhari (Srinagar)",
+                            role: "Patron / Guidance (verify title)",
+                            note: "Referenced publicly in connection with SHERT leadership and patronage.",
+                        },
+                        {
+                            name: "Hidayat Bukhari",
+                            role: "Community Relief & Advocacy (verify title)",
+                            note: "Referenced for SHERT field work and public-facing writing.",
+                        },
+                    ].map((leader) => (
+                        <div key={leader.name} className="border border-gray-200 rounded-xl p-6 bg-gray-50">
+                            <p className="text-gray-900 font-semibold text-lg">{leader.name}</p>
+                            <p className="text-orange-600 font-semibold text-sm mb-2">{leader.role}</p>
+                            <p className="text-gray-700">{leader.note}</p>
+                        </div>
+                    ))}
+                </div>
+                <p className="text-gray-600 text-sm mt-4 text-center">
+                    Add short bios, photos, and confirmed titles once provided by the team.
                 </p>
             </div>
         </div>

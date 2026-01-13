@@ -14,11 +14,11 @@ const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <FaHeart className="text-orange-500 text-2xl" />
               <span className="text-white font-bold text-xl">
-                {process.env.NEXT_PUBLIC_CHARITY_NAME || 'CharityWeb'}
+                {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon Foundation'}
               </span>
             </div>
             <p className="text-gray-400 text-sm">
-              Transforming lives through compassion, one donation at a time.
+              Lighting lives through healthcare, education, and dignity—built on a legacy of service since 1988.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#hero" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
                   Home
                 </Link>
               </li>
@@ -37,12 +37,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
-                  Dashboard
+                <Link href="/#programs" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                  Programs
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#impact" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                  Impact
+                </Link>
+              </li>
+              <li>
+                <Link href="/#support" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
                   Contact
                 </Link>
               </li>
@@ -54,24 +59,19 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Get Involved</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#donate" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#donate" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
                   Donate Now
                 </Link>
               </li>
               <li>
-                <Link href="#volunteer" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
-                  Volunteer
+                <Link href="/#get-involved" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                  Volunteer / Partner
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
-                  Become a Partner
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
-                  Corporate Giving
-                </a>
+                <Link href="/#news" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                  News &amp; Stories
+                </Link>
               </li>
             </ul>
           </div>
@@ -115,14 +115,14 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {currentYear} {process.env.NEXT_PUBLIC_CHARITY_NAME || 'CharityWeb'}. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
-              Privacy Policy
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-sm">
+              © {currentYear} {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon Foundation'}. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
+                Privacy Policy
             </a>
             <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
               Terms of Service
