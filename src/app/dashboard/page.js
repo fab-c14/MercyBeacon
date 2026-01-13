@@ -102,7 +102,7 @@ const DashboardPage = () => {
             Impact Dashboard
           </h1>
           <p className="text-gray-600 text-lg">
-            Track our progress and see the difference we're making together
+            Track our progress and see the difference we&apos;re making together
           </p>
         </div>
 

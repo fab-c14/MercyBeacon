@@ -120,7 +120,7 @@ const AboutPage = () => (
                     Founded on the belief that every person deserves dignity, opportunity, and hope, 
                     CharityWeb brings together compassionate individuals from around the world. 
                     Through food relief, healthcare support, education programs, and community development, 
-                    we're building a brighter future—one act of kindness at a time.
+                    we&apos;re building a brighter future—one act of kindness at a time.
                 </p>
             </div>
         </div>
