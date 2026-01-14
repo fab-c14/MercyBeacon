@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CharityWeb - Making a Difference Together",
-  description: "Join us in our mission to create positive change in communities worldwide. Every contribution brings hope, dignity, and opportunity to those who need it most.",
+  title: "MercyBeacon Foundation International",
+  description: "Lighting lives through healthcare, education, and dignity—built on a legacy of service since 1988.",
 };
 
 export default function RootLayout({ children }) {
