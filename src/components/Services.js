@@ -45,10 +45,10 @@ const CONFIG = {
 };
 
 const getColorClasses = () => ({
-    bg: 'bg-[#e6f3f6]',
-    icon: 'text-[#2c798e]',
-    button: 'bg-[#2c798e] hover:bg-[#255f71]',
-    border: 'border-[#c7e2e8]',
+    bg: 'bg-[var(--brand-accent-soft)]',
+    icon: 'text-[var(--brand-accent)]',
+    button: 'bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-dark)]',
+    border: 'border-[var(--brand-border)]',
 });
 
 const Services = () => {

@@ -7,6 +7,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const brandName = process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon International Foundation';
 
   const navItems = [
     { name: 'Home', href: '/#hero' },
@@ -28,7 +29,7 @@ const Navigation = () => {
               <Image src="/Logo.png" alt="MercyBeacon International Foundation logo" fill priority sizes="40px" className="object-contain" />
             </div>
             <span className="text-[#1f3249] font-bold text-xl">
-              {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon International Foundation'}
+              {brandName}
             </span>
           </Link>
 
