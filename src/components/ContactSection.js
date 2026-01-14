@@ -68,35 +68,39 @@ const ContactSection = () => {
               Share your need so we can route it to the right MercyBeacon program—education, medical, or food/essential support. We also welcome partners and volunteers.
             </p>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
-                    <FaEnvelope className="text-[#2c798e] text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="text-gray-900 font-semibold mb-1">Email Us</h3>
-                    <p className="text-gray-600">info@mercybeacon.org</p>
-                  </div>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                  <FaEnvelope className="text-[#2c798e] text-xl" />
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
-                    <FaMapMarkerAlt className="text-[#2c798e] text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="text-gray-900 font-semibold mb-1">Visit Us</h3>
-                    <p className="text-gray-600">Srinagar, Jammu &amp; Kashmir (Legacy work under SHERT)</p>
-                  </div>
+                <div>
+                  <h3 className="text-gray-900 font-semibold mb-1">Email Us</h3>
+                  <p className="text-gray-600">info@mercybeacon.org</p>
                 </div>
+              </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
-                    <FaPhone className="text-[#2c798e] text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="text-gray-900 font-semibold mb-1">Call Us</h3>
-                    <p className="text-gray-600">+91 00000 00000</p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                  <FaMapMarkerAlt className="text-[#2c798e] text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-gray-900 font-semibold mb-1">Visit Us</h3>
+                  <p className="text-gray-600">Adjacent General Bus Stand, Parimpora, Srinagar, Jammu &amp; Kashmir 190017.</p>
+                  <p className='tex-gray-600'>Or</p>
+                  <p className="text-gray-600">⁠First Floor, B31, Block B, Sector 2, Noida - 201301</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                  <FaPhone className="text-[#2c798e] text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-gray-900 font-semibold mb-1">Call Us</h3>
+                  <p className="text-gray-600">+91 9796000751</p>
+                  <p className='text-gray-600'>Or</p>
+                  <p className='text-gray-600'>+91 7428037611</p>
+                </div>
               </div>
             </div>
           </div>
