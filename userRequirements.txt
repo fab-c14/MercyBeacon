@@ -1,8 +1,8 @@
-MERCYBEACON FOUNDATION INTERNATIONAL – WEBSITE CONTENT & NAVIGATION (FINAL)
+MERCYBEACON INTERNATIONAL FONDATION – WEBSITE CONTENT & NAVIGATION (FINAL)
 1) HOME
 Sections on the Home Page
 Hero (top banner)
-MercyBeacon Foundation International
+MercyBeacon International Foundation
 Lighting lives through healthcare, education, and dignity—built on a legacy of service since 1988.
 Primary CTAs
 •	Donate
@@ -10,7 +10,7 @@ Primary CTAs
 •	Request Medical Support
 •	Partner With Us
 Short “Who We Are”
-MercyBeacon Foundation International is a humanitarian initiative focused on healthcare access, education continuity, and community protection. Our work is rooted in decades of on-ground service carried out under the banner of Shams-ul-Huda Educational & Research Trust, supporting families who could not afford schooling, assisting with essential needs, and advancing community wellbeing through practical, life-saving interventions.
+MercyBeacon  International Foundation is a humanitarian initiative focused on healthcare access, education continuity, and community protection. Our work is rooted in decades of on-ground service carried out under the banner of Shams-ul-Huda Educational & Research Trust, supporting families who could not afford schooling, assisting with essential needs, and advancing community wellbeing through practical, life-saving interventions.
 Focus Areas (4 tiles)
 •	Education Support
 •	Healthcare & Relief
@@ -30,7 +30,7 @@ Show 3 latest posts (pull from “News & Stories”).
 ________________________________________
 2) ABOUT
 2.1 Who We Are
-MercyBeacon Foundation International is a social impact foundation dedicated to protecting health, enabling education, and restoring dignity for vulnerable households. Our work is designed to meet urgent needs (relief) while also strengthening long-term outcomes (education and health resilience).
+MercyBeacon  International Foundation is a social impact foundation dedicated to protecting health, enabling education, and restoring dignity for vulnerable households. Our work is designed to meet urgent needs (relief) while also strengthening long-term outcomes (education and health resilience).
 2.2 Our Legacy (1988–Present)
 Our roots trace back to 1988, when community service and welfare activities were carried out under Shams-ul-Huda Educational & Research Trust. Over the years, this work expanded across education support, household relief, and community wellbeing initiatives—serving as the foundation on which MercyBeacon builds today.
 2.3 Mission
