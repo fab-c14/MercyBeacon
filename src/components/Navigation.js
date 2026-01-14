@@ -2,10 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FaBars, FaTimes, FaHeart } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const brandName = process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon International Foundation';
 
   const navItems = [
     { name: 'Home', href: '/#hero' },
@@ -23,9 +25,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <FaHeart className="text-orange-500 text-2xl" />
-            <span className="text-gray-900 font-bold text-xl">
-              {process.env.NEXT_PUBLIC_CHARITY_NAME || 'CharityWeb'}
+            <div className="relative h-10 w-10">
+              <Image src="/Logo.png" alt="MercyBeacon International Foundation logo" fill priority sizes="40px" className="object-contain" />
+            </div>
+            <span className="text-[#1f3249] font-bold text-xl">
+              {brandName}
             </span>
           </Link>
 
@@ -35,14 +39,14 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-[#2c798e] transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
             ))}
             <Link
               href="#donate"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
+              className="bg-[#2c798e] hover:bg-[#255f71] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Donate Now
             </Link>
@@ -64,7 +68,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-orange-500 transition-colors font-medium"
+                className="block py-2 text-gray-700 hover:text-[#2c798e] transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -72,7 +76,7 @@ const Navigation = () => {
             ))}
             <Link
               href="#donate"
-              className="block mt-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold text-center transition-all duration-300"
+              className="block mt-2 bg-[#2c798e] hover:bg-[#255f71] text-white px-6 py-2 rounded-full font-semibold text-center transition-all duration-300"
               onClick={() => setIsOpen(false)}
             >
               Donate Now

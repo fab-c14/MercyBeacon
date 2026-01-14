@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaHeart, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +13,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <FaHeart className="text-orange-500 text-2xl" />
+              <div className="relative h-10 w-10">
+                <Image src="/Logo.png" alt="MercyBeacon International Foundation logo" fill sizes="40px" className="object-contain" />
+              </div>
               <span className="text-white font-bold text-xl">
-                {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon Foundation'}
+                {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon International Foundation'}
               </span>
             </div>
             <p className="text-gray-400 text-sm">
@@ -27,27 +30,27 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#hero" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#hero" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/about" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/#programs" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#programs" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Programs
                 </Link>
               </li>
               <li>
-                <Link href="/#impact" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#impact" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Impact
                 </Link>
               </li>
               <li>
-                <Link href="/#support" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#support" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Contact
                 </Link>
               </li>
@@ -59,17 +62,17 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Get Involved</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#donate" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#donate" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Donate Now
                 </Link>
               </li>
               <li>
-                <Link href="/#get-involved" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#get-involved" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   Volunteer / Partner
                 </Link>
               </li>
               <li>
-                <Link href="/#news" className="text-gray-400 hover:text-orange-500 transition-colors text-sm">
+                <Link href="/#news" className="text-gray-400 hover:text-[#2c798e] transition-colors text-sm">
                   News &amp; Stories
                 </Link>
               </li>
@@ -82,28 +85,28 @@ const Footer = () => {
             <div className="flex gap-3 mb-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2c798e] rounded-full flex items-center justify-center transition-all duration-300"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="text-white" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2c798e] rounded-full flex items-center justify-center transition-all duration-300"
                 aria-label="Twitter"
               >
                 <FaTwitter className="text-white" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2c798e] rounded-full flex items-center justify-center transition-all duration-300"
                 aria-label="Instagram"
               >
                 <FaInstagram className="text-white" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2c798e] rounded-full flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn className="text-white" />
@@ -118,16 +121,16 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {currentYear} {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon Foundation'}. All rights reserved.
+              © {currentYear} {process.env.NEXT_PUBLIC_CHARITY_NAME || 'MercyBeacon International Foundation'}. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
+              <a href="#" className="text-gray-500 hover:text-[#2c798e] text-sm transition-colors">
                 Privacy Policy
             </a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
+            <a href="#" className="text-gray-500 hover:text-[#2c798e] text-sm transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 text-sm transition-colors">
+            <a href="#" className="text-gray-500 hover:text-[#2c798e] text-sm transition-colors">
               Cookie Policy
             </a>
           </div>

@@ -90,8 +90,8 @@ const DonationSection = () => {
                         }}
                         className={`py-4 px-6 rounded-xl font-semibold transition-all duration-300 ${
                           selectedAmount === amount
-                            ? 'bg-orange-500 text-white shadow-lg'
-                            : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-orange-500'
+                            ? 'bg-[#2c798e] text-white shadow-lg'
+                            : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-[#2c798e]'
                         }`}
                       >
                         ${amount}
@@ -115,7 +115,7 @@ const DonationSection = () => {
                           setSelectedAmount(null);
                         }}
                         placeholder="Enter amount"
-                        className="w-full pl-10 pr-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                        className="w-full pl-10 pr-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                       />
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const DonationSection = () => {
                         value={donorName}
                         onChange={(e) => setDonorName(e.target.value)}
                         placeholder="John Doe"
-                        className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                       />
                     </div>
                     <div>
@@ -142,26 +142,26 @@ const DonationSection = () => {
                         value={donorEmail}
                         onChange={(e) => setDonorEmail(e.target.value)}
                         placeholder="john@example.com"
-                        className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                       />
                     </div>
                   </div>
 
                   {errorMessage && (
-                    <div className="bg-red-50 border-2 border-red-300 rounded-xl p-4 mb-6 text-red-600">
-                      {errorMessage}
-                    </div>
-                  )}
+                <div className="bg-red-50 border-2 border-red-300 rounded-xl p-4 mb-6 text-red-600">
+                  {errorMessage}
+                </div>
+              )}
 
-                  <button
-                    onClick={handleDonateClick}
-                    disabled={isSubmitting}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
-                  >
-                    {isSubmitting ? (
-                      'Processing...'
-                    ) : (
-                      <>
+              <button
+                onClick={handleDonateClick}
+                disabled={isSubmitting}
+                className="w-full bg-[#2c798e] hover:bg-[#255f71] text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+              >
+                {isSubmitting ? (
+                  'Processing...'
+                ) : (
+                  <>
                         <FaHeart /> Proceed to Donate
                       </>
                     )}
@@ -210,7 +210,7 @@ const DonationSection = () => {
                       setDonorEmail('');
                       setErrorMessage('');
                     }}
-                    className="text-orange-500 hover:text-orange-600 font-semibold transition-colors"
+                    className="text-[#2c798e] hover:text-[#255f71] font-semibold transition-colors"
                   >
                     ← Make Another Donation
                   </button>

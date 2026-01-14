@@ -14,8 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "MercyBeacon Foundation International",
-  description: "Lighting lives through healthcare, education, and dignity—built on a legacy of service since 1988.",
+  title: "MercyBeacon International Foundation",
+  description:
+    "MercyBeacon International Foundation lights lives through healthcare, education, and dignity—built on a legacy of service since 1988.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

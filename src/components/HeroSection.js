@@ -14,14 +14,14 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <div className="inline-block mb-4">
-              <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
-                🌟 MercyBeacon Foundation International
+              <span className="bg-[var(--brand-accent-soft)] text-[var(--brand-navy)] px-4 py-2 rounded-full text-sm font-semibold">
+                🌟 MercyBeacon International Foundation
               </span>
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900">
               Lighting lives through
-              <span className="block text-orange-500 mt-2">
+              <span className="block text-[var(--brand-accent)] mt-2">
                 healthcare, education, and dignity
               </span>
             </h1>
@@ -33,28 +33,28 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center lg:justify-start max-w-xl">
               <a
                 href="#donate"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-500 hover:bg-orange-600 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-dark)] rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Donate
               </a>
               
               <a
                 href="#programs"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-50 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[var(--brand-accent)] border-2 border-[var(--brand-accent)] rounded-full hover:bg-[var(--brand-accent-soft)] transition-all duration-300"
               >
                 Sponsor Education
               </a>
               
               <a
                 href="#support"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gray-900 hover:bg-black rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-[var(--brand-navy)] hover:bg-[var(--brand-navy-dark)] rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Request Medical Support
               </a>
 
               <a
                 href="#get-involved"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-50 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-[var(--brand-accent)] border-2 border-[var(--brand-accent)] rounded-full hover:bg-[var(--brand-accent-soft)] transition-all duration-300"
               >
                 Partner With Us
               </a>
@@ -63,19 +63,19 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 max-w-lg mx-auto lg:mx-0">
               <div>
-                <div className="text-3xl font-bold text-orange-500">
+                <div className="text-3xl font-bold text-[var(--brand-accent)]">
                   5K+
                 </div>
                 <div className="text-gray-600 text-sm">Students supported</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-500">
+                <div className="text-3xl font-bold text-[var(--brand-accent)]">
                   8K+
                 </div>
                 <div className="text-gray-600 text-sm">Families reached</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-500">
+                <div className="text-3xl font-bold text-[var(--brand-accent)]">
                   1.2K+
                 </div>
                 <div className="text-gray-600 text-sm">Medical cases supported</div>
@@ -86,7 +86,7 @@ const HeroSection = () => {
           {/* Image/Animation Placeholder */}
           <div className="hidden lg:flex justify-center items-center">
             <div className="relative w-full max-w-md aspect-square">
-              <div className="absolute inset-0 bg-orange-100 rounded-full"></div>
+              <div className="absolute inset-0 bg-[var(--brand-accent-soft)] rounded-full"></div>
               <div className="relative z-10 w-full h-full flex items-center justify-center">
                 <div className="text-8xl">💝</div>
               </div>

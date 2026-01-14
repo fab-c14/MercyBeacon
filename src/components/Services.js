@@ -3,7 +3,7 @@ import { FaUtensils, FaHeartbeat, FaBook, FaHandsHelping } from 'react-icons/fa'
 
 const CONFIG = {
     title: "Focus Areas",
-    subtitle: "MercyBeacon Foundation International prioritizes education continuity, healthcare access, dignity for families, and community protection.",
+    subtitle: "MercyBeacon International Foundation prioritizes education continuity, healthcare access, dignity for families, and community protection.",
     services: [
         {
             icon: <FaBook className="text-4xl" />,
@@ -44,35 +44,12 @@ const CONFIG = {
     ],
 };
 
-const getColorClasses = (color) => {
-    const colors = {
-        orange: {
-            bg: 'bg-orange-50',
-            icon: 'text-orange-500',
-            button: 'bg-orange-500 hover:bg-orange-600',
-            border: 'border-orange-200',
-        },
-        teal: {
-            bg: 'bg-teal-50',
-            icon: 'text-teal-500',
-            button: 'bg-teal-500 hover:bg-teal-600',
-            border: 'border-teal-200',
-        },
-        blue: {
-            bg: 'bg-blue-50',
-            icon: 'text-blue-500',
-            button: 'bg-blue-500 hover:bg-blue-600',
-            border: 'border-blue-200',
-        },
-        green: {
-            bg: 'bg-green-50',
-            icon: 'text-green-500',
-            button: 'bg-green-500 hover:bg-green-600',
-            border: 'border-green-200',
-        },
-    };
-    return colors[color];
-};
+const getColorClasses = () => ({
+    bg: 'bg-[var(--brand-accent-soft)]',
+    icon: 'text-[var(--brand-accent)]',
+    button: 'bg-[var(--brand-accent)] hover:bg-[var(--brand-accent-dark)]',
+    border: 'border-[var(--brand-border)]',
+});
 
 const Services = () => {
     return (
