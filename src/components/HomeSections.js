@@ -15,7 +15,7 @@ import {
 const SectionHeader = ({ eyebrow, title, description }) => (
   <div className="text-center mb-12">
     {eyebrow && (
-      <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide mb-2">
+      <p className="text-sm font-semibold text-[#2c798e] uppercase tracking-wide mb-2">
         {eyebrow}
       </p>
     )}
@@ -29,17 +29,17 @@ const SectionHeader = ({ eyebrow, title, description }) => (
 );
 
 const LegacyStrip = () => (
-  <section id="legacy" className="bg-orange-50 border-y-2 border-orange-200">
+  <section id="legacy" className="bg-[#e6f3f6] border-y-2 border-[#c7e2e8]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <div className="flex items-center gap-3">
-        <FaShieldAlt className="text-orange-500 text-2xl" />
+        <FaShieldAlt className="text-[#2c798e] text-2xl" />
         <p className="text-gray-900 font-semibold">
           Serving communities since 1988 under Shams-ul-Huda Educational &amp;
           Research Trust.
         </p>
       </div>
       <p className="text-gray-700 text-sm md:text-base">
-        MercyBeacon Foundation International builds on this legacy to expand
+        MercyBeacon International Foundation builds on this legacy to expand
         healthcare access, education continuity, and dignified family support.
       </p>
     </div>
@@ -69,20 +69,20 @@ const SpotlightSection = () => (
           </p>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-start gap-2">
-              <FaCheckCircle className="text-orange-500 mt-1" />
+              <FaCheckCircle className="text-[#2c798e] mt-1" />
               <span>Awareness drives on food safety and prevention.</span>
             </li>
             <li className="flex items-start gap-2">
-              <FaCheckCircle className="text-orange-500 mt-1" />
+              <FaCheckCircle className="text-[#2c798e] mt-1" />
               <span>Community action against harmful practices.</span>
             </li>
             <li className="flex items-start gap-2">
-              <FaCheckCircle className="text-orange-500 mt-1" />
+              <FaCheckCircle className="text-[#2c798e] mt-1" />
               <span>Partnerships for public health protection.</span>
             </li>
           </ul>
         </div>
-        <div className="bg-orange-500 text-white rounded-2xl p-8 shadow-lg">
+        <div className="bg-[#1f3249] text-white rounded-2xl p-8 shadow-lg">
           <h3 className="text-2xl font-semibold mb-4">How You Can Help</h3>
           <p className="mb-6 opacity-90">
             Join prevention campaigns, share verified information, and support
@@ -98,7 +98,7 @@ const SpotlightSection = () => (
             </a>
             <a
               href="#get-involved"
-              className="flex items-center justify-between bg-white text-orange-600 font-semibold rounded-xl px-4 py-3 transition hover:-translate-y-0.5"
+              className="flex items-center justify-between bg-white text-[#2c798e] font-semibold rounded-xl px-4 py-3 transition hover:-translate-y-0.5"
             >
               <span>Partner with our community protection work</span>
               <FaArrowRight />
@@ -158,10 +158,10 @@ const WhatWeDoSection = () => {
   ];
 
   const colorMap = {
-    blue: "bg-blue-50 border-blue-200",
-    teal: "bg-teal-50 border-teal-200",
-    orange: "bg-orange-50 border-orange-200",
-    green: "bg-green-50 border-green-200",
+    blue: "bg-[#e6f3f6] border-[#c7e2e8]",
+    teal: "bg-[#f1f7f9] border-[#c7e2e8]",
+    orange: "bg-[#e6f3f6] border-[#c7e2e8]",
+    green: "bg-[#f1f7f9] border-[#c7e2e8]",
   };
 
   return (
@@ -253,7 +253,7 @@ const ProgramsSection = () => {
               className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col gap-3"
             >
               <div className="flex items-center gap-3">
-                <FaGlobeAmericas className="text-orange-500" />
+                <FaGlobeAmericas className="text-[#2c798e]" />
                 <h3 className="text-xl font-semibold text-gray-900">
                   {program.title}
                 </h3>
@@ -261,7 +261,7 @@ const ProgramsSection = () => {
               <p className="text-gray-700 flex-1">{program.detail}</p>
               <a
                 href="#support"
-                className="inline-flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700"
+                className="inline-flex items-center gap-2 text-[#2c798e] font-semibold hover:text-[#255f71]"
               >
                 Learn more
                 <FaArrowRight />
@@ -276,11 +276,11 @@ const ProgramsSection = () => {
 
 const ImpactSection = () => {
   const stats = [
-    { label: "Students supported", value: "5,000+", color: "text-orange-500" },
-    { label: "Fee cases covered", value: "2,100", color: "text-orange-500" },
-    { label: "Food kits delivered", value: "12,000", color: "text-orange-500" },
-    { label: "Medical support cases", value: "1,200", color: "text-orange-500" },
-    { label: "Higher education placements", value: "320", color: "text-orange-500" },
+    { label: "Students supported", value: "5,000+", color: "text-[#2c798e]" },
+    { label: "Fee cases covered", value: "2,100", color: "text-[#2c798e]" },
+    { label: "Food kits delivered", value: "12,000", color: "text-[#2c798e]" },
+    { label: "Medical support cases", value: "1,200", color: "text-[#2c798e]" },
+    { label: "Higher education placements", value: "320", color: "text-[#2c798e]" },
   ];
 
   const stories = [
@@ -404,7 +404,7 @@ const UpdatesSection = () => {
               key={update.title}
               className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col"
             >
-              <span className="inline-flex w-fit px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-700 rounded-full mb-3">
+              <span className="inline-flex w-fit px-3 py-1 text-xs font-semibold bg-[#d3e8ed] text-[#1f3249] rounded-full mb-3">
                 {update.category}
               </span>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -413,7 +413,7 @@ const UpdatesSection = () => {
               <p className="text-gray-700 flex-1">{update.summary}</p>
               <a
                 href={update.link}
-                className="mt-4 inline-flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700"
+                className="mt-4 inline-flex items-center gap-2 text-[#2c798e] font-semibold hover:text-[#255f71]"
               >
                 Read more
                 <FaArrowRight />
@@ -471,7 +471,7 @@ const TransparencySection = () => {
               className="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-3">
-                <FaChartPie className="text-orange-500" />
+                <FaChartPie className="text-[#2c798e]" />
                 <h3 className="text-lg font-semibold text-gray-900">
                   {column.title}
                 </h3>
@@ -540,7 +540,7 @@ const GetInvolvedSection = () => {
               <p className="text-gray-700 flex-1">{action.description}</p>
               <a
                 href={action.href}
-                className="mt-3 inline-flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700"
+                className="mt-3 inline-flex items-center gap-2 text-[#2c798e] font-semibold hover:text-[#255f71]"
               >
                 Take action
                 <FaArrowRight />

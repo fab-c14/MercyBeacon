@@ -68,35 +68,35 @@ const ContactSection = () => {
               Share your need so we can route it to the right MercyBeacon program—education, medical, or food/essential support. We also welcome partners and volunteers.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-orange-100 p-3 rounded-lg">
-                  <FaEnvelope className="text-orange-500 text-xl" />
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                    <FaEnvelope className="text-[#2c798e] text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-gray-900 font-semibold mb-1">Email Us</h3>
+                    <p className="text-gray-600">info@mercybeacon.org</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-gray-900 font-semibold mb-1">Email Us</h3>
-                  <p className="text-gray-600">info@mercybeacon.org</p>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-orange-100 p-3 rounded-lg">
-                  <FaMapMarkerAlt className="text-orange-500 text-xl" />
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                    <FaMapMarkerAlt className="text-[#2c798e] text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-gray-900 font-semibold mb-1">Visit Us</h3>
+                    <p className="text-gray-600">Srinagar, Jammu &amp; Kashmir (Legacy work under SHERT)</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-gray-900 font-semibold mb-1">Visit Us</h3>
-                  <p className="text-gray-600">Srinagar, Jammu &amp; Kashmir (Legacy work under SHERT)</p>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-orange-100 p-3 rounded-lg">
-                  <FaPhone className="text-orange-500 text-xl" />
-                </div>
-                <div>
-                  <h3 className="text-gray-900 font-semibold mb-1">Call Us</h3>
-                  <p className="text-gray-600">+91 00000 00000</p>
-                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#e6f3f6] p-3 rounded-lg">
+                    <FaPhone className="text-[#2c798e] text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-gray-900 font-semibold mb-1">Call Us</h3>
+                    <p className="text-gray-600">+91 00000 00000</p>
+                  </div>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                   placeholder="John Doe"
                 />
               </div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                   placeholder="john@example.com"
                 />
               </div>
@@ -146,7 +146,7 @@ const ContactSection = () => {
                   value={formData.needType}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:border-[#2c798e] transition-colors"
                 >
                   <option>Education</option>
                   <option>Medical</option>
@@ -166,7 +166,7 @@ const ContactSection = () => {
                   value={formData.location}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                   placeholder="City / district"
                 />
               </div>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors resize-none"
                   placeholder="Describe the situation and the kind of support required..."
                 />
               </div>
@@ -197,7 +197,7 @@ const ContactSection = () => {
                   name="supportLink"
                   value={formData.supportLink}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-300 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#2c798e] transition-colors"
                   placeholder="Share a link to receipts, reports, or references"
                 />
               </div>
@@ -218,7 +218,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                className="w-full bg-[#2c798e] hover:bg-[#255f71] text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? (
                   'Sending...'

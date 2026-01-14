@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --brand-navy: #1f3249;
+  --brand-accent: #2c798e;
+  --brand-accent-dark: #255f71;
+  --brand-accent-soft: #e6f3f6;
+  --brand-border: #c7e2e8;
+}
+
 /* Custom animations and utilities */
 @keyframes fadeIn {
   from {
@@ -52,4 +60,3 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-

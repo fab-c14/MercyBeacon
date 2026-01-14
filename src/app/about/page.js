@@ -8,7 +8,7 @@ import {
 const content = {
     heading: "Who We Are",
     subheading:
-        "MercyBeacon Foundation International is a social impact foundation protecting health, enabling education, and restoring dignity for vulnerable households. Our work is rooted in service carried out under Shams-ul-Huda Educational & Research Trust since 1988.",
+        "MercyBeacon International Foundation is a social impact foundation protecting health, enabling education, and restoring dignity for vulnerable households. Our work is rooted in service carried out under Shams-ul-Huda Educational & Research Trust since 1988.",
     services: [
         {
             icon: FaHandHoldingHeart,
@@ -45,16 +45,16 @@ const content = {
 
 const getColorClasses = (color) => {
     const colors = {
-        orange: 'bg-orange-50 border-orange-200',
-        teal: 'bg-teal-50 border-teal-200',
-        blue: 'bg-blue-50 border-blue-200',
-        green: 'bg-green-50 border-green-200',
+        orange: 'bg-[#e6f3f6] border-[#c7e2e8]',
+        teal: 'bg-[#f1f7f9] border-[#c7e2e8]',
+        blue: 'bg-[#e6f3f6] border-[#c7e2e8]',
+        green: 'bg-[#f1f7f9] border-[#c7e2e8]',
     };
     const iconColors = {
-        orange: 'bg-orange-500',
-        teal: 'bg-teal-500',
-        blue: 'bg-blue-500',
-        green: 'bg-green-500',
+        orange: 'bg-[#2c798e]',
+        teal: 'bg-[#2c798e]',
+        blue: 'bg-[#2c798e]',
+        green: 'bg-[#2c798e]',
     };
     return { card: colors[color], icon: iconColors[color] };
 };
@@ -93,7 +93,7 @@ const CTAButton = () => (
     <div className="mt-16 text-center">
         <a
             href={content.ctaLink}
-            className="inline-block bg-orange-500 hover:bg-orange-600 rounded-full px-8 py-3 font-bold text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-block bg-[#2c798e] hover:bg-[#255f71] rounded-full px-8 py-3 font-bold text-white transition-all duration-300 shadow-lg hover:shadow-xl"
         >
             {content.ctaText}
         </a>
@@ -119,7 +119,7 @@ const AboutPage = () => (
                         To ensure poverty never blocks a child’s education, a patient’s healthcare, or a family’s dignity—by delivering reliable support systems at the household level.
                     </p>
                 </div>
-                <div className="bg-orange-50 border-2 border-orange-200 rounded-2xl p-8 shadow-lg">
+                <div className="bg-[#e6f3f6] border-2 border-[#c7e2e8] rounded-2xl p-8 shadow-lg">
                     <h3 className="text-gray-900 text-2xl font-bold mb-4">Vision</h3>
                     <p className="text-gray-700 leading-relaxed">
                         A society where communities thrive through education continuity, safer public health conditions, and strong family support, especially for those most at risk.
@@ -167,7 +167,7 @@ const AboutPage = () => (
                     ].map((leader) => (
                         <div key={leader.name} className="border border-gray-200 rounded-xl p-6 bg-gray-50">
                             <p className="text-gray-900 font-semibold text-lg">{leader.name}</p>
-                            <p className="text-orange-600 font-semibold text-sm mb-2">{leader.role}</p>
+                            <p className="text-[#2c798e] font-semibold text-sm mb-2">{leader.role}</p>
                             <p className="text-gray-700">{leader.note}</p>
                         </div>
                     ))}
