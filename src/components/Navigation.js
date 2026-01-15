@@ -7,9 +7,6 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const brandName =
-    process.env.NEXT_PUBLIC_CHARITY_NAME ||
-    'MercyBeacon International Foundation';
 
   const navItems = [
     { name: 'Home', href: '/#hero' },
@@ -27,21 +24,22 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative h-9 w-9 transition-transform duration-300 group-hover:scale-105">
+          {/* Logo */}
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <div className="relative h-12 sm:h-14 md:h-16 w-auto">
               <Image
                 src="/Logo.png"
                 alt="MercyBeacon International Foundation logo"
-                fill
+                height={64}
+                width={220}
                 priority
-                sizes="36px"
-                className="object-contain"
+                className="h-full w-auto object-contain"
               />
             </div>
-            <span className="text-[#1f3249] font-semibold text-sm sm:text-base md:text-lg transition-colors group-hover:text-[#2c798e]">
-              {brandName}
-            </span>
           </Link>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-7">
@@ -60,7 +58,7 @@ const Navigation = () => {
             {/* Donate Button */}
             <Link
               href="#donate"
-              className="relative overflow-hidden bg-[#2c798e] text-white
+              className="bg-[#2c798e] text-white
                          px-4 py-1.5 text-sm rounded-md font-medium
                          transition-all duration-300 shadow-sm
                          hover:bg-[#255f71] hover:shadow-md hover:scale-105
